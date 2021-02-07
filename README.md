@@ -33,17 +33,23 @@ Fmax = 1148
 
 ## Lab 3 - Part 1
 ### Microcar Movements
+
+**Required Packages**
+***Python:***
+- numpy
+- matplotlib
+
 **Background:**
-Testing and comparing the expected and actual movements of autonomous vehicles - remote controlled Zen Wheel microcars (http://zenwheels.com).
+The purpose of this lab is to test and compare the expected and actual movements of autonomous vehicles - remote controlled Zen Wheel microcars (http://zenwheels.com).
 Each microcar is able to perform the following actions:
 - Move North
 - Move West
 - Move East
 - Move South
 
-Multiple microcars were testing and the data was recorded in two csv files per microcar. One contains the instructions given to each microcar, and the other contains the actual actions performed by each microcar. 
-The expected movements of cars 1 and 2 are located in the files 'exp1.csv' and 'exp2.csv' respectively. \
-Similarly, the actual movements of cars 1 and 2 are located in the files 'act1.csv' and 'act2.csv' respectively. \
+Multiple cars were tested and the data was recorded in two csv files per microcar. One contains the instructions given to the car, and the other contains the actual actions performed by it. 
+The expected movements of cars 1 and 2 are located in the files 'exp1.csv' and 'exp2.csv', respectively. \
+Similarly, the actual movements of cars 1 and 2 are located in the files 'act1.csv' and 'act2.csv', respectively. \
 
 **CSV File format**
 The CSV files contain lines for the car movements in the following format: Action, Time, Speed. \
@@ -51,13 +57,38 @@ For example... \
 N, 10, 8 = Move North for 10 seconds with speed 8 meters per second
 
 
-**Inputs:**
+**Function 1: **
+microcar(expected,actual)
+
+***Inputs:***
+- The 'expected' input is a list of strings containing names of the CSV files 'exp1.csv' and 'exp2.csv'
+- The 'actual' input is a list of strings containing names of the CSV files 'act1.csv' and 'act2.csv'
+
+***Outputs:***
+The function returns six numpy arrays:
+- The expected horizontal displacements for each microcar (ExpHorDisp)
+- The expected vertical displacements for each microcar (ExpVerDisp)
+- The actual horizontal displacements for each microcar (ActHorDisp)
+- The actual vertical displacements for each microcar (ActVerDisp)
+- The expected distances travelled by each microcar (ExpDistance)
+- The actual distances travelled by each microcar (ActDistance)
+
+All displacements and distances are presented in meters and rounded to 2 decimal places.
 
 
-**Outputs:**
+**Function 2:** 
+plotmicrocar(expected,actual)
 
+***Inputs:*** \
+(accepts the same arguments as the microcar function)
 
-**Testing Data Inputs:** \
+***Outputs:***
+The function will create and output the following plots:
+- A bar-plot comparing the expected and actual distance covered by each microcar.
+- A scatter-plot of the expected final horizontal and vertical displacements for each microcar.
+- A scatter-plot of the actual final horizontal and vertical displacements for each microcar.
 
+***Example function call:***
+plotmicrocar(['exp1.csv','exp2.csv'],['act1.csv','act2.csv'])
 
-***Testing Data Outputs:*** \
+***Sample Files***
