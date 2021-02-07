@@ -53,7 +53,7 @@ Similarly, the actual movements of cars 1 and 2 are located in the files 'act1.c
 #### CSV File format:
 The CSV files contain lines for the car movements in the following format: Action, Time, Speed. \
 For example... \
-N, 10, 8 = Move North for 10 seconds with speed 8 meters per second
+N, 10, 8 = Move **North** for **10** seconds with speed **8** meters per second
 
 
 #### Function 1:
@@ -63,31 +63,31 @@ microcar(expected,actual)
     - The 'expected' input is a list of strings containing names of the CSV files 'exp1.csv' and 'exp2.csv'
     - The 'actual' input is a list of strings containing names of the CSV files 'act1.csv' and 'act2.csv'
 
-***Outputs:***
+- #### Outputs:
 The function returns six numpy arrays:
-- The expected horizontal displacements for each microcar (ExpHorDisp)
-- The expected vertical displacements for each microcar (ExpVerDisp)
-- The actual horizontal displacements for each microcar (ActHorDisp)
-- The actual vertical displacements for each microcar (ActVerDisp)
-- The expected distances travelled by each microcar (ExpDistance)
-- The actual distances travelled by each microcar (ActDistance)
+    - The expected horizontal displacements for each microcar (ExpHorDisp)
+    - The expected vertical displacements for each microcar (ExpVerDisp)
+    - The actual horizontal displacements for each microcar (ActHorDisp)
+    - The actual vertical displacements for each microcar (ActVerDisp)
+    - The expected distances travelled by each microcar (ExpDistance)
+    - The actual distances travelled by each microcar (ActDistance)
 
 All displacements and distances are presented in meters and rounded to 2 decimal places.
 
 
-**Function 2:** 
+#### Function 2:
 plotmicrocar(expected,actual)
 
-***Inputs:*** \
+- #### Inputs:
 (accepts the same arguments as the microcar function)
 
-***Outputs:***
+- #### Outputs:
 The function will create and output the following plots:
 - A bar-plot comparing the expected and actual distance covered by each microcar.
 - A scatter-plot of the expected final horizontal and vertical displacements for each microcar.
 - A scatter-plot of the actual final horizontal and vertical displacements for each microcar.
 
-***Example function call:***
+- #### Example function call:
 plotmicrocar(['exp1.csv','exp2.csv'],['act1.csv','act2.csv'])
 
-***Sample Files***
+- #### Sample Files:
