@@ -64,7 +64,6 @@ microcar(expected,actual)
     - The 'actual' input is a list of strings containing names of the CSV files 'act1.csv' and 'act2.csv'
 
 - #### Outputs:
-The function returns six numpy arrays:
     - The expected horizontal displacements for each microcar (ExpHorDisp)
     - The expected vertical displacements for each microcar (ExpVerDisp)
     - The actual horizontal displacements for each microcar (ActHorDisp)
@@ -72,9 +71,9 @@ The function returns six numpy arrays:
     - The expected distances travelled by each microcar (ExpDistance)
     - The actual distances travelled by each microcar (ActDistance)
 
-All displacements and distances are presented in meters and rounded to 2 decimal places.
+All 6 outputs are in the form of numpy arrays. Displacements and distances are presented in meters and rounded to 2 decimal places.
 
-
+<br>
 #### Function 2:
 plotmicrocar(expected,actual)
 
@@ -82,10 +81,9 @@ plotmicrocar(expected,actual)
 (accepts the same arguments as the microcar function)
 
 - #### Outputs:
-The function will create and output the following plots:
-- A bar-plot comparing the expected and actual distance covered by each microcar.
-- A scatter-plot of the expected final horizontal and vertical displacements for each microcar.
-- A scatter-plot of the actual final horizontal and vertical displacements for each microcar.
+    - A bar-plot comparing the expected and actual distance covered by each microcar.
+    - A scatter-plot of the expected final horizontal and vertical displacements for each microcar.
+    - A scatter-plot of the actual final horizontal and vertical displacements for each microcar.
 
 - #### Example function call:
 plotmicrocar(['exp1.csv','exp2.csv'],['act1.csv','act2.csv'])
