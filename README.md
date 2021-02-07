@@ -30,16 +30,15 @@ F = [1, 0, 6, 65, 237, 413, 583, 742, 889, 1024, 1148]\
 Hmax = 5106\
 Fmax = 1148 
 
-
+<br><br>
 ## Lab 3 - Part 1
 ### Microcar Movements
 
-**Required Packages**
-***Python:***
+#### Required Python3 Packages:
 - numpy
 - matplotlib
 
-**Background:**
+#### Background:
 The purpose of this lab is to test and compare the expected and actual movements of autonomous vehicles - remote controlled Zen Wheel microcars (http://zenwheels.com).
 Each microcar is able to perform the following actions:
 - Move North
@@ -51,18 +50,18 @@ Multiple cars were tested and the data was recorded in two csv files per microca
 The expected movements of cars 1 and 2 are located in the files 'exp1.csv' and 'exp2.csv', respectively. \
 Similarly, the actual movements of cars 1 and 2 are located in the files 'act1.csv' and 'act2.csv', respectively. \
 
-**CSV File format**
+#### CSV File format:
 The CSV files contain lines for the car movements in the following format: Action, Time, Speed. \
 For example... \
 N, 10, 8 = Move North for 10 seconds with speed 8 meters per second
 
 
-**Function 1: **
+#### Function 1:
 microcar(expected,actual)
 
-***Inputs:***
-- The 'expected' input is a list of strings containing names of the CSV files 'exp1.csv' and 'exp2.csv'
-- The 'actual' input is a list of strings containing names of the CSV files 'act1.csv' and 'act2.csv'
+- #### Inputs:
+    - The 'expected' input is a list of strings containing names of the CSV files 'exp1.csv' and 'exp2.csv'
+    - The 'actual' input is a list of strings containing names of the CSV files 'act1.csv' and 'act2.csv'
 
 ***Outputs:***
 The function returns six numpy arrays:
