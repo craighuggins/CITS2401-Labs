@@ -46,9 +46,9 @@ Each microcar is able to perform the following actions:
 - Move East
 - Move South
 
-Multiple cars were tested and the data was recorded in two csv files per microcar. One contains the instructions given to the car, and the other contains the actual actions performed by it. 
+Multiple cars were tested and the data was recorded in two csv files per microcar. One contains the instructions given to the car, and the other contains the actual actions performed by it. <br>
 The expected movements of cars 1 and 2 are located in the files 'exp1.csv' and 'exp2.csv', respectively. \
-Similarly, the actual movements of cars 1 and 2 are located in the files 'act1.csv' and 'act2.csv', respectively. \
+Similarly, the actual movements of cars 1 and 2 are located in the files 'act1.csv' and 'act2.csv', respectively.
 
 **CSV File format:**
 The CSV files contain lines for the car movements in the following format: Action, Time, Speed. \
@@ -56,7 +56,7 @@ For example... \
 N, 10, 8 = Move **North** for **10** seconds with speed **8** meters per second
 
 
-**Function 1:**
+**Function 1: **
 microcar(expected,actual)
 
 - **Inputs:**
@@ -86,7 +86,7 @@ plotmicrocar(expected,actual)
     - A scatter-plot of the expected final horizontal and vertical displacements for each microcar.
     - A scatter-plot of the actual final horizontal and vertical displacements for each microcar.
 
-- **Example function call**
+- **Example function call: **
 plotmicrocar(['exp1.csv','exp2.csv'],['act1.csv','act2.csv'])
 
 - **Sample Files:**
