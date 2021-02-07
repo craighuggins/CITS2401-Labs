@@ -56,7 +56,7 @@ For example... \
 N, 10, 8 = Move **North** for **10** seconds with speed **8** meters per second
 
 
-**Function 1: **
+**Function 1:**
 microcar(expected,actual)
 
 - **Inputs:**
@@ -86,7 +86,7 @@ plotmicrocar(expected,actual)
     - A scatter-plot of the expected final horizontal and vertical displacements for each microcar.
     - A scatter-plot of the actual final horizontal and vertical displacements for each microcar.
 
-- **Example function call: **
+- **Example function call:**
 plotmicrocar(['exp1.csv','exp2.csv'],['act1.csv','act2.csv'])
 
 - **Sample Files:**
