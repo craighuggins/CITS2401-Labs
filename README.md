@@ -21,11 +21,11 @@ You can find more details at: http://journals.plos.org/plosone/article?id=10.137
 - Maximum population of bees working in the hive over all simulated generations n
 - Maximum population of bees working outside the hive over all simulated generations n
 
-**Testing Data:**\
-H,F,Hmax,Fmax = honeybee(1,1,1000,80,0.4,10)
+**Testing Data:**
+H, F, Hmax, Fmax = honeybee(1,1,1000,80,0.4,10)
 
-***Outputs:***
-H = [1, 26, 265, 975, 1706, 2396, 3034, 3621, 4160, 4654, 5106] \
-F = [1, 0, 6, 65, 237, 413, 583, 742, 889, 1024, 1148] \
-Hmax = 5106 \
-Fmax = 1148 \
+***Outputs:*** \
+H = [1, 26, 265, 975, 1706, 2396, 3034, 3621, 4160, 4654, 5106]\
+F = [1, 0, 6, 65, 237, 413, 583, 742, 889, 1024, 1148]\
+Hmax = 5106\
+Fmax = 1148 
